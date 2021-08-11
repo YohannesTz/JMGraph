@@ -14,7 +14,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("layout.fxml"));
         primaryStage.setTitle("JMGraph");
         primaryStage.setScene(new Scene(root));
-        primaryStage.getIcons().add(new Image(Main.class.getClassLoader().getResource("sample/graphWhite.png").toExternalForm()));
+        primaryStage.getScene().getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+        primaryStage.getIcons().add(new Image(getClass().getClassLoader().getResource("sample/graphWhite.png").toExternalForm()));
         primaryStage.show();
     }
 
