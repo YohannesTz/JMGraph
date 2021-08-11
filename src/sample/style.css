@@ -12,6 +12,12 @@
     -fx-stroke: white;
 }
 
+.chart .chart-title .text {
+    -fx-fill: white;
+}
+
+
+
 .chart-plot-background {
     -fx-background-color: #575758;
     -fx-foreground-color: white;
@@ -43,6 +49,19 @@
 .background {
     -fx-background-color: #674A44;
     -fx-foreground-color: #353434;
+}
+
+.choice-box {
+    -fx-background-color: derive(#353434,20%);
+    -fx-text-fill: white;
+    -fx-focus-color: derive(#353434,20%);
+    -fx-faint-focus-color: derive(#353434,10%);
+    -fx-control-inner-background: derive(#353434,20%);
+    -fx-selection-bar: derive(#353434,10%);
+}
+
+.choice-box .label {
+     -fx-text-fill: white;
 }
 
 .button {
