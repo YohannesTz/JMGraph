@@ -30,6 +30,7 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         showButton.setOnAction(e -> getChoice(functionTypes));
         mathChart.setCreateSymbols(false);
+        mathChart.getStyleClass().add("thick-chart");
         graphHelper = new GraphHelper(mathChart, 10);
         clearButton.setOnAction(e -> graphHelper.clear());
     }

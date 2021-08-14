@@ -17,7 +17,7 @@ public class GraphHelper {
     public void plotLine(final Function<Double, Double> function, String name) {
         final XYChart.Series<Double, Double> series = new XYChart.Series<Double, Double>();
         series.setName(name);
-        for (double x = -range; x <= range; x = x + 0.05) {
+        for (double x = -range; x <= range; x = x + 0.25) {
             plotPoint(x, function.apply(x), series);
         }
         graph.getData().add(series);
